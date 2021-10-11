@@ -1,2 +1,2 @@
-# Avicennia-marina
+# mangrove
 RNA-seq
