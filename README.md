@@ -14,3 +14,7 @@ The MangroveDB is building. 2023-10-24
 MangroveDB offers browser, analysis and visualization functions to accelerate the investigation of molecular adaptation to intertidal environments in mangrove plants.
 
 
+# Cite
+Please cite the following paper if you used MangroveDB in your research.  
+
+Xu, C., Zheng, H.-L. (2023) MangroveDB: A comprehensive online database for mangrove plants based on multi-omics data.
