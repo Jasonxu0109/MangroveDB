@@ -12,4 +12,4 @@ MangroveDB offers browser, analysis and visualization functions to accelerate th
 # Cite
 Please cite the following paper if you used MangroveDB in your research.  
 
-Xu, C., Zheng, H.-L. (2024) MangroveDB: An interactive multi-omics database for exploration of gene expression underlying mangroves adaptation to intertidal environments.
+Xu, C., Zheng, H.-L. (2024) MangroveDB: A comprehensive online database for mangroves based on multi-omics data.
