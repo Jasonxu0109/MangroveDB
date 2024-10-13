@@ -1,5 +1,7 @@
 # News - MangroveDB
 
+A full documentation for analysis modules on MangroveDB is available at XXX. 2024-10-13
+
 MangroveDB website is online. The web server address is https://jasonxu.shinyapps.io/MangroveDB/ or https://weekly-hardy-trout.ngrok-free.app/. 2024-06-13
 
 ![图片](https://github.com/Jasonxu0109/MangroveDB/assets/11934986/87b589f4-4695-439f-abd4-d6df2fade22a)
