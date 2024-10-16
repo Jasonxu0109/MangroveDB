@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Condition Expression Analysis &mdash; MangroveDB-Tutorial v1.0 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Population Structure Analysis" href="09-Population%20Structure%20Analysis.html" />
+    <link rel="prev" title="Co-expression Analysis" href="07-Co-expression%20Analysis.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> MangroveDB-Tutorial
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Overview</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../01-Home.html">Home</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02-Genomes.html">Genomes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../03-Genes.html">Genes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../04-Dataset.html">Dataset</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../05-Expression.html">Expression</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Analysis</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="01-Introduction.html">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="02-Dimensional%20Reduction.html">Dimensional Reduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="03-Differentially%20expressed%20gene%20analysis.html">Differentially expressed gene analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="04-Enrichment%20Analysis.html">Enrichment Analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="05-Tissue-specific%20Expression%20Analysis.html">Tissue-specific Expression Analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="06-Time-Series%20Expression%20Analysis.html">Time-Series Expression Analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="07-Co-expression%20Analysis.html">Co-expression Analysis</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Condition Expression Analysis</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#read-before-use">Read before use</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="09-Population%20Structure%20Analysis.html">Population Structure Analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="10-Map.html">Map</a></li>
+<li class="toctree-l2"><a class="reference internal" href="11-Mutational%20Signature.html">Mutational Signature</a></li>
+<li class="toctree-l2"><a class="reference internal" href="12-BLAST.html">BLAST</a></li>
+<li class="toctree-l2"><a class="reference internal" href="13-Toolkits.html">Toolkits</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../07-About.html">About</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../08-Citation.html">Citation</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">MangroveDB-Tutorial</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="index.html">Analysis</a> &raquo;</li>
+      <li>Condition Expression Analysis</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/06-Analysis/08-Condition Expression Analysis.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="condition-expression-analysis">
+<h1>Condition Expression Analysis<a class="headerlink" href="#condition-expression-analysis" title="Permalink to this headline">¶</a></h1>
+<p>This tool provides a boxplot of the gene expression values of a single gene.</p>
+<section id="read-before-use">
+<h2>Read before use<a class="headerlink" href="#read-before-use" title="Permalink to this headline">¶</a></h2>
+<p>Users need to prepare three files, gene expression matrix, metadata information, and a single gene.</p>
+<p><strong>The gene expression matrix:</strong> The first column is Geneid, other columns are data. The name of first column must be Geneid. Data from excel (format: xlsx).</p>
+<p><strong>The metadata:</strong> The data must contain Samples, BioProject, Treatment, Tissue, and Groups columns. Data from excel (format: xlsx).</p>
+<p><strong>Single gene:</strong> The first column is Geneid. The name of first column must be Geneid. Data from excel (format: xlsx).</p>
+<p><strong>Note:</strong> The order of the sample names in both gene expression matrix and metadata information files must be consistent.</p>
+<p><strong>Input example data:</strong> <a class="reference external" href="https://github.com/Jasonxu0109/MangroveDB/releases/download/Example/Gene_expression_under_stress_condition.xlsx">Gene expression matrix</a>,
+<a class="reference external" href="https://github.com/Jasonxu0109/MangroveDB/releases/download/Example/Sample_groups_under_stress_condition.xlsx">Metadata information</a>,
+<a class="reference external" href="https://github.com/Jasonxu0109/MangroveDB/releases/download/Example/Gene_under_stress_condition.xlsx">Single gene</a>.</p>
+<a class="reference internal image-reference" href="../_static/images/boxplot.png"><img alt="../_static/images/boxplot.png" class="align-center" src="../_static/images/boxplot.png" style="width: 100%;" /></a>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="07-Co-expression%20Analysis.html" class="btn btn-neutral float-left" title="Co-expression Analysis" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="09-Population%20Structure%20Analysis.html" class="btn btn-neutral float-right" title="Population Structure Analysis" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Chaoqun Xu.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
