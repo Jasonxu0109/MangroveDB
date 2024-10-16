@@ -1,6 +1,6 @@
 # News - MangroveDB
 
-A full documentation for analysis modules on MangroveDB is available at XXX. 
+A full documentation for analysis modules on MangroveDB is available at https://mangrovedb.readthedocs.io/en/latest/index.html. 
 
 The MangroveDB-Tutorial coming soon: 2024-10-14
 
