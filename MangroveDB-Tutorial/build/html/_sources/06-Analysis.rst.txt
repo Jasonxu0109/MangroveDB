@@ -1,0 +1,94 @@
+==========================
+Analysis
+==========================
+
+Introduction
+---------------------------------------------------------------------------------------------
+
+.. image:: _static/images/introduction.png
+        :width: 80%
+        :align: center
+
+Dimensional Reduction
+---------------------------------------------------------------------------------------------
+
+.. image:: _static/images/DR.png
+        :width: 80%
+        :align: center
+		
+Differentially expressed gene analysis
+---------------------------------------------------------------------------------------------
+
+.. image:: _static/images/DE.png
+        :width: 80%
+        :align: center
+
+Enrichment Analysis
+---------------------------------------------------------------------------------------------
+
+.. image:: _static/images/GO.png
+        :width: 80%
+        :align: center
+
+Tissue-specific Expression Analysis
+---------------------------------------------------------------------------------------------
+
+.. image:: _static/images/tvalue.png
+        :width: 80%
+        :align: center
+		
+Time-Series Expression Analysis
+---------------------------------------------------------------------------------------------
+
+.. image:: _static/images/ts.png
+        :width: 80%
+        :align: center
+
+Co-expression Analysis
+---------------------------------------------------------------------------------------------
+
+.. image:: _static/images/co.png
+        :width: 80%
+        :align: center
+
+Condition Expression Analysis
+---------------------------------------------------------------------------------------------
+
+.. image:: _static/images/boxplot.png
+        :width: 80%
+        :align: center
+		
+Population Structure Analysis
+---------------------------------------------------------------------------------------------
+
+.. image:: _static/images/ps.png
+        :width: 80%
+        :align: center
+
+Map
+---------------------------------------------------------------------------------------------
+
+.. image:: _static/images/map.png
+        :width: 80%
+        :align: center
+
+Mutational Signature
+---------------------------------------------------------------------------------------------
+
+.. image:: _static/images/context.png
+        :width: 80%
+        :align: center
+		
+BLAST
+---------------------------------------------------------------------------------------------
+
+.. image:: _static/images/blast.png
+        :width: 80%
+        :align: center
+
+Toolkits
+---------------------------------------------------------------------------------------------
+
+
+
+		
