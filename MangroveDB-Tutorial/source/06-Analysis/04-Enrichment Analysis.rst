@@ -30,7 +30,7 @@ Users need to prepare one files, a list of genes of interest.
 
 **Input example data:** `Gene list <https://github.com/Jasonxu0109/MangroveDB/releases/download/Example/Up-regulated_genes.xlsx>`_.
 
-.. image:: ../../_static/images/KEGG.png
+.. image:: ../../_static/images/kegg.png
         :width: 100%
         :align: center
 
